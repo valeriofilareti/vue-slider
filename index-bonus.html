@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carosello Bonus 2</title>
+  <link rel="stylesheet" href="css/style-bonus.css">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+  <div id="app" class="main-wrapper">
+    <div class="slider">
+      <div class="img-wrapper">
+        <img :src="immagini[counter]" alt="">
+      </div> 
+    </div>
+    <div class="slider-control">
+      <div @click="prev" id="top-button" class="arrow up">&uarr;</div>
+      <div @click="next" id="bottom-button" class="arrow down">&darr;</div>
+      <div class="cell">
+        <!-- <img src="img/01.webp" alt="">
+        <div class="overlay on"></div> -->
+      </div>
+      <div class="cell">
+        <!-- <img src="img/02.webp" alt=""> -->
+      </div>
+      <div class="cell">
+        <!-- <img src="img/03.webp" alt=""> -->
+      </div>
+      <div class="cell">
+        <!-- <img src="img/04.webp" alt=""> -->
+      </div>
+      <div class="cell">
+        <!-- <img src="img/05.webp" alt=""> -->
+      </div>
+    </div>
+  </div>
+  <script src="js/script-bonus.js"></script>
+</body>
+</html>
