@@ -18,22 +18,23 @@
     <div class="slider-control">
       <div @click="prev" id="top-button" class="arrow up">&uarr;</div>
       <div @click="next" id="bottom-button" class="arrow down">&darr;</div>
-      <div class="cell">
+      <div v-for="immagine in immagini" class="cell">
+        <img :src="immagine" alt="">
         <!-- <img src="img/01.webp" alt="">
         <div class="overlay on"></div> -->
       </div>
-      <div class="cell">
-        <!-- <img src="img/02.webp" alt=""> -->
+      <!-- <div class="cell">
+        
       </div>
       <div class="cell">
-        <!-- <img src="img/03.webp" alt=""> -->
+        
       </div>
       <div class="cell">
-        <!-- <img src="img/04.webp" alt=""> -->
+        
       </div>
       <div class="cell">
-        <!-- <img src="img/05.webp" alt=""> -->
-      </div>
+        
+      </div> -->
     </div>
   </div>
   <script src="js/script-bonus.js"></script>
