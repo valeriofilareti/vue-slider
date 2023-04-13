@@ -9,12 +9,14 @@
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-  <div class="main-wrapper">
+  <div id="app" class="main-wrapper">
     <div class="slider">
-      <div id="top-button" class="arrow up hide-btn">&uarr;</div>
-      <div id="bottom-button" class="arrow down">&darr;</div>
+      <div @click="prev" id="top-button" class="arrow up">&uarr;</div>
+      <div @click="next" id="bottom-button" class="arrow down">&darr;</div>
       <div class="img-wrapper">
-
+        
+          <img :src="immagini[counter]" alt="">
+        
       </div> 
     </div>
   </div>
