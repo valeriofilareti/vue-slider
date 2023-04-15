@@ -29,8 +29,16 @@ createApp({
       }
     },
     thumbClick(index){
-      this.counter = parseInt(index) 
+      this.counter = index
+    },
+    autoScroll(){
+      setInterval(() => {
+        this.next()
+      },2000)
     }
+  },
+  mounted(){
+    this.autoScroll()
   }
 
 }).mount('#app')
