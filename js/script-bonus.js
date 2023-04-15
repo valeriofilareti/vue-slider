@@ -27,6 +27,9 @@ createApp({
       } else {
         this.counter--;
       }
+    },
+    thumbClick(index){
+      this.counter = parseInt(index) 
     }
   }
 

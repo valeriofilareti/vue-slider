@@ -18,8 +18,8 @@
     <div class="slider-control">
       <div @click="prev" id="top-button" class="arrow up">&uarr;</div>
       <div @click="next" id="bottom-button" class="arrow down">&darr;</div>
-      <div v-for="immagine in immagini" class="cell">
-        <img :src="immagine" alt="">
+      <div v-for="(immagine, index) in immagini" class="cell">
+        <img :class="{'active' : counter == index}" @click="thumbClick(index)" :src="immagine" alt="">
         <!-- <img src="img/01.webp" alt="">
         <div class="overlay on"></div> -->
       </div>
